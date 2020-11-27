@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
                                                     startActivity(intent)
                                                 } else {
                                                     toast("tidak ideal")
-                                                    val intent = Intent(this@MainActivity, Result::class.java)
+                                                    val intent = Intent(this@MainActivity, resultWanita::class.java)
                                                     intent.putExtra("Ideal", "Tidak Ideal")
                                                     startActivity(intent)
                                                 }
@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
                                             tv_test.text = hasilFinal.toString()
                                             if(hasilFinal.equals(1)){
                                                 toast("ideal")
-                                                val intent = Intent(this@MainActivity,resultWanita::class.java)
+                                                val intent = Intent(this@MainActivity,Result::class.java)
                                                 intent.putExtra("Ideal","Ideal")
                                                 startActivity(intent)
                                             }else{
